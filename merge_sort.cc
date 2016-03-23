@@ -2,7 +2,7 @@
 
 
 using namespace std;
-void marge(int*A , int p ,int q, int r)
+void merge(int*A , int p ,int q, int r)
 {
     int n1=q-p+1;
     int n2=r-q;
@@ -35,7 +35,7 @@ void marge(int*A , int p ,int q, int r)
      {
          merge_sort(A,p,(p+r)/2);
          merge_sort(A,((p+r)/2)+1,r);
-         marge(A,p,(p+r)/2,r);
+         merge(A,p,(p+r)/2,r);
      }
  }
 int main()
